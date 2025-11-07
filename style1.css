@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f8ff;
+  margin: 0;
+}
+
+/* Заголовок */
+.header {
+  text-align: center;
+  background: linear-gradient(to bottom, #d3e4f7, #a7c9ec);
+  padding: 20px;
+}
+.header h1 {
+  color: #c62828;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Меню */
+.nav {
+  background: linear-gradient(to bottom, #e3e3e3, #cfcfcf);
+  box-shadow: 2px 2px 5px gray;
+  overflow: hidden;
+  text-align: center;
+}
+.nav a {
+  float: left;
+  text-decoration: none;
+  color: black;
+  padding: 12px 25px;
+  font-weight: bold;
+  border-right: 1px solid #aaa;
+}
+.nav a:hover {
+  background: linear-gradient(to bottom, #ccc, #999);
+  color: white;
+}
+
+/* Колонки */
+.left {
+  float: left;
+  width: 20%;
+  background: #e8f0ff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.right {
+  float: right;
+  width: 20%;
+  background: #e8f0ff;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.center {
+  overflow: hidden;
+  text-align: left;
+  background: white;
+  padding: 20px;
+}
+
+/* Наплывающий блок */
+.base {
+  display: inline-block;
+  position: relative;
+  width: 125px;
+  height: 125px;
+  margin: 10px;
+  border: 2px solid #67f562;
+  background: linear-gradient(to right, #d1f55b, #c2e9ff);
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.base img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.layer {
+  position: absolute;
+  bottom: -33%;
+  /* top: 0; */
+  left: 0;
+  width: 100%;
+  height: 33%;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(10, 80, 180, 0.45);
+  /* color: white; */
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  transition: bottom 0.3s;
+}
+.base:hover .layer {
+  bottom: 0;
+}
+
+/* Дополнительно для красоты */
+h3 {
+  text-align: center;
+  color: #003366;
+}
+ul {
+  padding-left: 20px;
+}

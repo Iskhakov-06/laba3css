@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #eef2f7;
+  padding: 20px;
+}
+
+/* Контейнер меню */
+.vmenu {
+  width: 230px;
+  background: #f0f0f0;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Основные пункты меню */
+.pt {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background: linear-gradient(to bottom, #ffffff, #dcdcdc);
+  padding: 12px 20px;
+  border-bottom: 1px solid #aaa;
+  transition: background 0.3s;
+}
+
+.pt:hover {
+  background: linear-gradient(to bottom, #ccc, #999);
+  color: white;
+}
+
+/* Контейнер с подменю */
+.item {
+  position: relative;
+}
+
+/* Подменю — спрятано по умолчанию */
+.drop {
+  display: none; /* скрыто пока не наведём */
+  background: #eaeaea;
+  overflow: hidden;
+  max-width: 0;
+  transition: max-height 0.6s ease-out;
+
+}
+
+/* Элементы подменю */
+.drop_item {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 25px;
+  border-bottom: 1px solid #ccc;
+  background: #f8f8f8;
+  transition: background 0.3s;
+}
+
+.drop_item:hover {
+  background: #dcdcdc;
+}
+
+/* При наведении показываем подменю */
+.item:hover .drop {
+  max-width: 300px;
+  display: block;
+}
